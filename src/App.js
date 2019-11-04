@@ -13,6 +13,8 @@ function App() {
 
 	const addItem = item => {
 		// add the given item to the cart
+		// Should we push this instead?
+		setCart (cart + item);
 	};
 
 	return (
