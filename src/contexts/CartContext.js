@@ -1,13 +1,12 @@
 import React, { useState, createContext } from 'react';
 
 export const CartContext = createContext({
- //What goes here?
+ // What goes here?
 });
 
 
 export const CartProvider = (props) => {
   const [cart, setCart] = useState([]);
-
   const addItem = item => {
     setCart(prevCart => [...prevCart, {item}]);
   }
